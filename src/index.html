@@ -1,0 +1,92 @@
+{% extends 'components/_layout.html' %}
+{% set site_title = 'Главная' %}
+
+{% block content %}
+
+{% include 'components/_header.html' %}
+
+<section class="slider">
+  <div class="container">
+    <div class="splide splide-slider">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide"><img src="img/slider-1.jpg" alt="" loading="lazy"></li>
+          <li class="splide__slide"><img src="img/slider-2.jpg" alt="" loading="lazy"></li>
+          <li class="splide__slide"><img src="img/slider-3.jpg" alt="" loading="lazy"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="container">
+    <div class="about-text">
+      <h2 class="title">О нас</h2>
+      <p>EatWellHouse - это ресторан, который предлагает широкий выбор блюд европейской кухни от шеф-повара, а также детское меню и детскую зону для наших маленьких гостей. Мы также предоставляем услуги по организации мероприятий, включая банкетное меню и планирование вашего праздника. В нашем уютном доме мы стремимся к тому, чтобы каждый день нашей жизни был вкусным и запоминающимся. Мы убеждены, что правильное питание играет важную роль в нашем здоровье, поэтому наш шеф-повар всегда готов предложить блюда, которые будут не только вкусными, но и полезными для вашего организма.</p>
+      <p>Мы приглашаем вас насладиться атмосферой нашего ресторана и нашими блюдами, чтобы вы могли ощутить нашу заботу о вашем здоровье и благополучии.</p>
+    </div>
+    <img src="img/about.png" alt="" class="about-img">
+  </div>
+</section>
+
+<section class="afisha">
+  <div class="container">
+    <div class="splide splide-afisha">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="afisha-item">
+              <img src="img/afisha.jpg" alt="" class="afisha-img" loading="lazy">
+              <div class="afisha-text">
+                <h3 class="title">АФИША<br> на июль</h3>
+                <p>А давайте соберёмся все вместе в EatWellHouse!</p>
+                <p>7, 14, 21, 28 июля живая музыка и dj<br> Начало в 19:00</p>
+                <p><a href="#" class="link">Заказ столика</a></p>
+              </div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="afisha-item">
+              <img src="img/afisha.jpg" alt="" class="afisha-img" loading="lazy">
+              <div class="afisha-text">
+                <h3 class="title">АФИША<br> на август</h3>
+                <p>А давайте соберёмся все вместе в EatWellHouse!</p>
+                <p>7, 14, 21, 28 июля живая музыка и dj<br> Начало в 19:00</p>
+                <p><a href="#" class="link">Заказ столика</a></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="eatwell">
+  <div class="container">
+    <div class="eatwell-top">
+      <div class="eatwell-info">
+        <ul class="eatwell-social">
+          <li><a href="#"><img src="img/svg/vk-black.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/svg/instagram-black.svg" alt=""></a></li>
+        </ul>
+        <h2>EatWellHouse - это Уютный Дом, который делает вашу жизнь вкуснее каждый день!</h2>
+      </div>
+      <a href="#" data-fancybox class="eatwell-video"><img src="img/eatwell-video.jpg" alt=""></a>
+    </div>
+    <div class="eatwell-bottom">
+      <div class="eatwell-text">
+        <h3>Вкусная еда высшего качества и первоклассный сервис</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, dolor praesentium. Impedit reprehenderit, ipsum distinctio delectus quis quaerat ab maiores quas illo commodi eligendi amet, labore nobis, autem totam eos.</p>
+        <ul>
+          <li>Praesentium rerum, odio quam reprehenderit dolorem dicta maxime tempora tempore necessitatibus amet ducimus velit dolorum aut aliquid? Eius non voluptas voluptates reiciendis impedit! Voluptatum optio similique et saepe, perspiciatis tempore.</li>
+          <li>Numquam laudantium nihil amet velit architecto similique a officiis minima neque ratione, dolor, omnis, id asperiores veniam labore recusandae natus? Maxime, soluta ullam! Fugiat quidem, asperiores debitis accusantium consequuntur qui?</li>
+        </ul>
+      </div>
+      <img src="img/eatwell-pizza.png" alt="" class="eatwell-pizza">
+    </div>
+  </div>
+</section>
+
+{% endblock %}

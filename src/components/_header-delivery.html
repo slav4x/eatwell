@@ -1,0 +1,48 @@
+<header class="header">
+  <div class="header-top">
+    <div class="container container-lg">
+      <a href="/" class="header-logo"><img src="img/svg/logo-new.svg" alt=""></a>
+      <div data-fancybox data-src="#popup-address" class="header-address"><p>введите адрес доставки</p></div>
+      <div class="header-cart">
+        <a href="#" class="header-cart__icon"><span>3</span></a>
+        <div class="header-cart__popup">
+          <h3>Ваш заказ</h3>
+          {% include 'components/cart-item-header.html' %}
+          {% include 'components/cart-item-header.html' %}
+          {% include 'components/cart-item-header.html' %}
+          <div class="header-cart__total">
+            <a href="#">перейти в корзину</a>
+            <h4>Итого: <span>1050 ₽</span></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="popup" id="popup-address">
+  <div class="popup-content">
+    <div class="popup-main">
+      <h2 class="popup-title">Зоны доставки</h2>
+      <form action="#" class="popup-form">
+        <input type="text" class="popup-input" id="address" placeholder="введите адрес доставки или выберите на карте" />
+        <input type="number" class="popup-input sm" id="apartment" placeholder="квартира" />
+        <input type="number" class="popup-input sm" id="floor" placeholder="этаж" />
+        <button class="popup-button">Подтвердить</button>
+      </form>
+    </div>
+  </div>
+  <div class="popup-content">
+    <div class="popup-sidebar">
+      <ul class="popup-nav">
+        <li><a href="#">Зоны доставки</a></li>
+        <li><a href="#">Условия доставки</a></li>
+        <li><a href="#">Оплата</a></li>
+        <li><a href="#">Политика конфиденциальности</a></li>
+      </ul>
+    </div>
+    <div class="popup-main">
+      <div class="popup-map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac09fb63a5eaae30d02acef3f51977ac3138cf0db246edec05c8fe4cc4d055fc4&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script></div>
+    </div>
+  </div>
+</div>

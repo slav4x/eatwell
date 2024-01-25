@@ -1,0 +1,40 @@
+.contact
+  padding: 100px 0
+  &-content
+    margin-left: auto
+    max-width: 845px
+    padding-left: 140px
+    border-left: 2px solid var(--color-black)
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.70) 0.12%, #FFF 33.89%, #FFF 61.44%, #FFF 99.9%)
+    p
+      font-size: 30px
+      line-height: 1.5
+      font-weight: 500
+      margin-top: 32px
+      &:first-child
+        margin-top: 0
+    .title
+      margin-top: 70px
+      &:first-child
+        margin-top: 0
+  &-map
+    width: 100%
+    height: 500px
+    position: relative
+    overflow: hidden
+    margin-top: 64px
+    & > iframe
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 100% !important
+      height: 100% !important
+  &-img
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 15px
+    margin: auto 0
+    z-index: -1

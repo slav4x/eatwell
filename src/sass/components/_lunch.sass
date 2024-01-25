@@ -1,0 +1,23 @@
+.lunch
+  &-back
+    a
+      @include flexbox
+      align-items: center
+      margin-top: 50px
+      height: 50px
+      position: relative
+      font-size: 22px
+      line-height: 1.4
+      font-weight: 500
+      padding-left: 120px
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 50px
+        height: 50px
+        border: 1px solid var(--color-dark)
+        background: url("data:image/svg+xml,%3Csvg width='22' height='14' viewBox='0 0 22 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.65685 13.7216L0.292892 7.67216C-0.0976315 7.30094 -0.0976315 6.69906 0.292892 6.32784L6.65685 0.278417C7.04738 -0.0928057 7.68054 -0.0928057 8.07107 0.278417C8.46159 0.64964 8.46159 1.25151 8.07107 1.62273L3.41421 6.04942L21 6.04942C21.5523 6.04942 22 6.47501 22 7C22 7.52499 21.5523 7.95058 21 7.95058L3.41421 7.95058L8.07107 12.3773C8.46159 12.7485 8.46159 13.3504 8.07107 13.7216C7.68054 14.0928 7.04738 14.0928 6.65685 13.7216Z' fill='%235C5C5C'/%3E%3C/svg%3E%0A") no-repeat center
+    & + .delivery-lunch
+      margin-top: 50px

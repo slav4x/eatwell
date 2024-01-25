@@ -1,0 +1,57 @@
+@media(max-width: 1200px)
+  .container
+    max-width: 1024px
+
+  .delivery-nav li
+    width: calc(100% / 4)
+  .delivery-section__grid
+    grid-template-columns: repeat(3,1fr)
+
+  .delivery-map__content
+    padding: 50px
+    max-width: 420px
+  .delivery-map__content p
+    font-size: 16px
+  .delivery-map__iframe
+    width: calc(100% - 420px)
+
+  .lunch-back + .delivery-lunch
+    background-size: 1200px
+    background-position: left center
+
+  .cart-col
+    &:nth-child(1)
+      width: 65%
+      padding-right: 30px
+    &:nth-child(2)
+      width: 35%
+      padding-left: 30px
+  .cart-item__image
+    width: 60px
+    height: 60px
+
+  .menu-section
+    background: #E2DDD9
+    box-shadow: inset 0 0 0 14px #E2DDD9, inset 0 0 0 15px #000, inset 0 0 0 25px #E2DDD9, inset 0 0 0 26px #000
+
+  .popup-sidebar
+    width: 100%
+    order: 1
+  .popup-main
+    width: 100%
+
+  .popup-nav
+    margin-top: 24px
+
+  .slider
+    height: 500px
+  .afisha-img
+    width: 500px
+  .afisha-text
+    width: calc(100% - 500px)
+  .afisha .container::after
+    left: 513px
+  .eatwell-pizza
+    display: none
+  .eatwell-text
+    max-width: 100%

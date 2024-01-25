@@ -1,0 +1,178 @@
+.header
+  position: relative
+  z-index: 10
+  .container-lg
+    .header-logo
+      margin-right: auto
+  &-top
+    height: 150px
+    @include flexbox
+    align-items: center
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10)
+    .container
+      @include flexbox
+      align-items: center
+  &-col
+    width: 200px
+    &:nth-child(2)
+      flex: 1
+      @include flexbox
+      align-items: center
+      justify-content: center
+    &:nth-child(3)
+      @include flexbox
+      justify-content: flex-end
+  &-contact
+    font-size: 15px
+    line-height: 1.4
+    p
+      margin-bottom: 4px
+      &:last-child
+        margin-bottom: 0
+  &-bottom
+    background: #fff
+    padding: 10px 0
+    border-top: 1px solid #000
+    border-bottom: 1px solid #000
+  &-nav
+    @include flexbox
+    align-items: center
+    justify-content: center
+    font-family: 'Playfair Display'
+    font-weight: 500
+    font-size: 22px
+    line-height: 1.4
+    text-transform: uppercase
+    li
+      @include flexbox
+      align-items: center
+      &::after
+        content: ''
+        width: 3px
+        height: 3px
+        display: block
+        margin: auto 0
+        background: #000
+      a
+        display: block
+        margin: 0 25px
+        transition: .25s
+        &:hover
+          color: var(--color-red)
+      &:first-child
+        a
+          margin-left: 0
+      &:last-child
+        &::after
+          display: none
+        a
+          margin-right: 0
+  &-logo
+    img
+      height: 90px
+  &-cart
+    margin-left: 30px
+    position: relative
+    &:hover
+      .header-cart__popup
+        transform: translateY(0px)
+        opacity: 1
+        pointer-events: inherit
+    &__popup
+      position: absolute
+      top: 100%
+      right: 0
+      width: 550px
+      background: #fff
+      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15)
+      padding: 24px 40px
+      transform: translateY(16px)
+      transition: .25s
+      opacity: 0
+      pointer-events: none
+      h3
+        font-size: 30px
+        font-weight: 500
+        line-height: 1.5
+    &__total
+      border-top: 1px solid var(--color-black)
+      padding-top: 16px
+      @include flexbox
+      align-items: center
+      justify-content: space-between
+      margin-top: 16px
+      a
+        padding: 5px 0
+        border-bottom: 1px solid var(--color-black)
+        font-size: 15px
+        line-height: 1.4
+        transition: .25s
+        &:hover
+          color: var(--color-red)
+          border-color: var(--color-red)
+      h4
+        font-size: 17px
+        font-weight: 500
+        span
+          color: var(--color-red)
+    &__item
+      @include flexbox
+      align-items: center
+      margin-top: 16px
+      &-image
+        width: 60px
+        height: 60px
+        object-fit: cover
+        object-position: center
+      &-title
+        flex: 1
+        padding: 0 10px
+        font-size: 15px
+        line-height: 1.4
+        display: -webkit-box
+        -webkit-line-clamp: 3
+        -webkit-box-orient: vertical
+        overflow: hidden
+      &-price
+        width: 90px
+        text-align: center
+        font-size: 15px
+    &__icon
+      display: block
+      width: 100px
+      height: 100px
+      background: var(--color-red) url("data:image/svg+xml,%3Csvg width='50' height='48' viewBox='0 0 50 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.3789 22.5L14.3789 11.4542C14.3789 5.58848 19.1341 0.833338 24.9998 0.833338V0.833338C30.8656 0.833338 35.6207 5.58848 35.6207 11.4543L35.6207 22.5' stroke='white' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M3.45856 18.0493C3.60102 16.3055 3.67225 15.4337 4.2466 14.9043C4.82094 14.375 5.69572 14.375 7.44527 14.375H42.5559C44.3054 14.375 45.1802 14.375 45.7546 14.9043C46.3289 15.4337 46.4001 16.3055 46.5426 18.0493L48.7209 44.7121C48.8036 45.7243 48.845 46.2304 48.5479 46.5527C48.2509 46.875 47.7431 46.875 46.7276 46.875H3.27358C2.25803 46.875 1.75025 46.875 1.45321 46.5527C1.15618 46.2304 1.19753 45.7243 1.28022 44.7121L3.45856 18.0493Z' stroke='white' stroke-width='1.5'/%3E%3C/svg%3E%0A") no-repeat center
+      position: relative
+      span
+        display: block
+        width: 24px
+        height: 24px
+        border-radius: 100%
+        background: #fff
+        border: 1px solid var(--color-black)
+        text-align: center
+        line-height: 22px
+        font-size: 14px
+        font-weight: 500
+        top: 24px
+        right: 12px
+        position: absolute
+  &-address
+    @include flexbox
+    align-items: center
+    padding: 5px
+    max-width: 600px
+    width: 100%
+    border: 1px solid var(--color-black)
+    cursor: pointer
+    &::before
+      content: ''
+      width: 50px
+      height: 50px
+      background: var(--color-red) url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.0608 1.60465C12.2319 1.15811 11.8419 0.768142 11.3953 0.939245L1.31061 4.80346C1.03686 4.90835 0.901657 5.14538 0.896297 5.37654C0.891047 5.60294 1.00585 5.79084 1.2364 5.86089L5.06196 7.02333C5.50254 7.1572 5.8428 7.49746 5.97667 7.93804L7.13911 11.7636C7.20916 11.9942 7.39706 12.109 7.62346 12.1037C7.85462 12.0983 8.09165 11.9631 8.19654 11.6894L12.0608 1.60465ZM11.0747 0.102429C12.2453 -0.346131 13.3461 0.754653 12.8976 1.9253L9.03336 12.01C8.78814 12.65 8.20951 12.9865 7.64423 12.9996C7.07419 13.0128 6.48487 12.6928 6.28168 12.0241L5.11924 8.19858C5.07229 8.04408 4.95592 7.92771 4.80142 7.88077L0.975855 6.71833C0.307151 6.51513 -0.0128242 5.92581 0.000393117 5.35577C0.0135 4.79049 0.349999 4.21186 0.989963 3.96664L1.15029 4.38505L0.989963 3.96664L11.0747 0.102429L11.2346 0.519618L11.0747 0.102429Z' fill='white'/%3E%3C/svg%3E%0A") no-repeat center
+    p
+      width: calc(100% - 50px)
+      padding-left: 20px
+      font-size: 15px
+  &-burger
+    display: none

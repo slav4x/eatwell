@@ -1,0 +1,61 @@
+.afisha
+  padding: 150px 0 100px
+  .container
+    &::before,
+    &::after
+      content: ''
+      z-index: 3
+      position: absolute
+      top: 0
+      width: 2px
+      height: calc(100% + 100px)
+      background: #000
+    &::before
+      left: 15px
+    &::after
+      left: 858px
+  &-item
+    @include flexbox
+    align-items: flex-start
+    border-bottom: 2px solid #000
+  &-img
+    height: 600px
+    width: 845px
+    object-fit: cover
+    object-position: center
+  &-text
+    width: calc(100% - 845px)
+    .title
+      text-align: center
+      padding: 10px 0 20px
+      border-bottom: 2px solid #000
+      margin-bottom: 60px
+    p
+      margin-top: 40px
+      max-width: 420px
+      margin-left: auto
+      line-height: 1.4
+      &:first-child
+        margin-top: 0
+  &-control
+    position: absolute
+    z-index: 5
+    top: 0
+    bottom: 0
+    margin: auto 0
+    left: -50px
+    border-radius: 100%
+    background: #fff
+    width: 100px
+    height: 100px
+    box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.10)
+    overflow: hidden
+  &-arrow
+    width: 50px
+    height: 100px
+    padding: 0
+    background: #fff url("data:image/svg+xml,%3Csvg width='50' height='100' viewBox='0 0 50 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M42 33V67L12 50' fill='%23222222'/%3E%3C/svg%3E%0A") no-repeat center
+    svg
+      display: none
+  &-next
+    transform: rotate(180deg)

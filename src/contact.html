@@ -1,0 +1,21 @@
+{% extends 'components/_layout.html' %}
+{% set site_title = 'Контакты' %}
+
+{% block content %}
+
+{% include 'components/_header.html' %}
+
+<section class="contact">
+  <div class="container">
+    <div class="contact-content">
+      <h2 class="title">Время работы</h2>
+      <p>Воскресенье-четверг: 10:00-22:00<br> Пятница-суббота: 10:00-00:00</p>
+      <h2 class="title">Адрес</h2>
+      <p>ул. проезд Гагарина д.4<br> <a href="tel:+7-921-195-96-00">+7-921-195-96-00</a><br> <a href="mailto:username@email.com">username@email.com</a></p>
+      <div class="contact-map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac09fb63a5eaae30d02acef3f51977ac3138cf0db246edec05c8fe4cc4d055fc4&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script></div>
+    </div>
+    <img src="img/contact.jpg" alt="" class="contact-img">
+  </div>
+</section>
+
+{% endblock %}

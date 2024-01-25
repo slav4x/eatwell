@@ -1,0 +1,181 @@
+@media(max-width: 1024px)
+  .container
+    max-width: 768px
+
+  .header-address
+    display: none
+  .header-top
+    height: 80px
+  .header-logo img
+    height: 50px
+
+  .delivery-lunch
+    padding: 40px
+  .delivery-lunch h3
+    font-size: 32px
+    max-width: 260px
+  .delivery-lunch a
+    max-width: 240px
+    font-size: 16px
+
+  .delivery-section
+    margin-top: 0
+  .delivery-section__title
+    font-size: 32px
+    margin-bottom: 24px
+  .delivery-section__grid
+    grid-template-columns: repeat(2,1fr)
+    gap: 24px
+  .delivery-map__content
+    width: 100%
+    max-width: 100%
+  .delivery-map__iframe
+    width: 100%
+    height: 300px
+
+  .delivery-map__title
+    font-size: 32px
+    padding: 50px 0 24px
+  .delivery-map
+    margin-top: 50px
+
+  .footer-top
+    flex-direction: column
+    align-items: center
+    gap: 24px
+
+  .header-cart__popup
+    display: none !important
+
+  .lunch-back a
+    margin-top: 24px
+    font-size: 15px
+    padding-left: 60px
+  .lunch-back+.delivery-lunch
+    margin-top: 24px
+    background-size: 1024px
+
+  .delivery-lunch__list
+    margin-top: 24px
+    gap: 24px
+    font-size: 17px
+
+  .cart
+    padding: 50px 0
+  .cart-title
+    font-size: 42px
+
+  .cart-col
+    &:nth-child(1)
+      width: 100%
+      padding: 0
+      border: 0
+    &:nth-child(2)
+      width: 100%
+      padding: 0
+      border: 0
+      border-top: 1px solid var(--color-black)
+      padding-top: 40px
+      margin-top: 40px
+  .cart-total__content
+    margin-left: 0
+
+  .reserv
+    padding: 50px 0
+  .reserv-content
+    max-width: 100%
+    padding-right: 0
+    border: 0
+
+  .title
+    font-size: 42px
+
+  .contact
+    padding: 50px 0
+  .contact-img
+    display: none
+  .contact-content
+    max-width: 100%
+    padding-left: 0
+    border: 0
+
+  .menu
+    padding: 50px 0
+  .menu-sidebar
+    width: 100%
+    margin-bottom: 24px
+  .menu-sidebar__nav
+    @include flexbox
+    align-items: flex-start
+    border-right: 1px solid var(--color-black)
+    border-bottom: 1px solid var(--color-black)
+    li
+      margin: 0
+      width: calc(100% / 3)
+  .menu-main
+    width: 100%
+  .menu .title
+    width: 100%
+    text-align: center
+    margin-bottom: 24px
+  .menu-section
+    height: auto
+    padding: 80px
+    margin-bottom: 24px
+
+  .popup-input
+    width: 100%
+    flex: initial
+    &.sm
+      flex: 1
+      max-width: 100%
+
+  .slider
+    height: 360px
+
+  .about
+    padding: 50px 0
+  .about-text
+    max-width: 100%
+    padding: 0
+    border: 0
+    p
+      max-width: 100%
+      font-size: 16px
+      margin-top: 16px
+  .about-img
+    display: none
+
+  .afisha
+    padding: 0 0 50px
+  .afisha-text
+    width: 100%
+    order: -1
+    padding-bottom: 32px
+  .afisha-text p
+    margin: 16px auto 0
+  .afisha-text .title
+    margin-bottom: 32px
+  .afisha-img
+    width: 100%
+    height: 360px
+  .afisha-control
+    left: calc(50% - 40px)
+    bottom: -40px
+    top: initial
+    right: 0
+    margin: 0
+  .afisha .container::after
+    left: initial
+    right: 15px
+  .afisha .container::after, .afisha .container::before
+    height: calc(100% + 40px)
+
+  .eatwell
+    padding: 50px 0
+
+  .text
+    padding: 50px 0
+    font-size: 15px
+    p
+      margin-top: 16px

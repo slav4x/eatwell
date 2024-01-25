@@ -1,0 +1,231 @@
+.delivery
+  &-nav
+    margin: 70px 0
+    @include flexbox
+    align-items: flex-start
+    border-top: 1px solid #000
+    border-left: 1px solid #000
+    li
+      width: calc(100% / 8)
+      border-bottom: 1px solid #000
+      border-right: 1px solid #000
+      a
+        @include flexbox
+        align-items: center
+        text-align: center
+        height: 100px
+        padding-left: 75px
+        padding-right: 15px
+        font-weight: 500
+        font-size: 22px
+        line-height: 1.4
+        position: relative
+        transition: .25s
+        img
+          position: absolute
+          top: 0
+          left: 0
+          height: 80px
+        p
+          width: 100%
+        &::after
+          content: ''
+          position: absolute
+          bottom: 0
+          left: 0
+          right: 0
+          height: 0
+          background: var(--color-red)
+          transition: .25s
+        &:hover
+          color: var(--color-red)
+          &::after
+            height: 5px
+  &-section
+    margin-top: 50px
+    padding-top: 50px
+    &__title
+      font-weight: 500
+      font-size: 52px
+      margin-bottom: 40px
+    &__grid
+      display: grid
+      grid-template-columns: repeat(4, 1fr)
+      gap: 40px 20px
+  &-item
+    @include flexbox
+    flex-direction: column
+    justify-content: space-between
+    &__img
+      width: 100%
+      height: 330px
+      object-fit: cover
+      object-position: center
+    &__content
+      margin-bottom: 24px
+      @include flexbox
+      flex-direction: column
+      gap: 8px
+    &__title
+      font-size: 22px
+      font-weight: 500
+      line-height: 1.4
+      width: 100%
+    &__description
+      font-size: 17px
+      font-weight: 500
+      line-height: 1.4
+      width: 100%
+      color: var(--color-dark)
+    &__spec
+      font-size: 15px
+      line-height: 1.4
+      color: var(--color-dark)
+    &__bottom
+      @include flexbox
+      align-items: center
+      justify-content: space-between
+      width: 100%
+    &__price
+      font-size: 22px
+      font-weight: 500
+    &__buy
+      width: 50%
+      max-width: 200px
+      height: 45px
+      border: 1px solid var(--color-black)
+      background: url(../img/svg/buy.svg) no-repeat center
+      cursor: pointer
+      transition: .25s
+      &:hover
+        box-shadow: 3px 3px 0px 0px var(--color-red)
+    &__info
+      @include flexbox
+      align-items: center
+      justify-content: space-between
+      width: 100%
+      height: 30px
+    &__select
+      max-width: 200px
+      width: 50%
+      height: 30px
+      border-radius: 999px
+      border: 1px solid var(--color-dark)
+      font-size: 15px
+      font-weight: 300
+      text-align: center
+      display: block
+      appearance: none
+      -webkit-appearance: none
+      text-align-last: center
+      background: #fff url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 6L9.76314 0H0.23686L5 6Z' fill='%235C5C5C'/%3E%3C/svg%3E%0A") no-repeat right 8px center
+      color: var(--color-black)
+  &-banner
+    color: #fff
+    background: var(--color-red)
+    @include flexbox
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    gap: 12px
+    font-size: 30px
+    font-weight: 500
+    line-height: 1.5
+    p
+      max-width: 270px
+      width: 100%
+    hr
+      width: 100%
+      height: 3px
+      border: 0
+      background: #fff
+      max-width: 270px
+      margin: 12px 0
+  &-lunch
+    padding: 60px 140px 70px
+    margin-top: 100px
+    background: url(../img/lunch.jpg) no-repeat center / cover
+    h3
+      max-width: 390px
+      font-size: 52px
+      font-weight: 500
+      line-height: 1.4
+      span
+        color: var(--color-red)
+    a
+      @include flexbox
+      align-items: center
+      justify-content: center
+      max-width: 346px
+      width: 100%
+      height: 50px
+      color: #fff
+      background: var(--color-red)
+      border: 1px solid #fff
+      text-transform: uppercase
+      font-size: 22px
+      margin-top: 24px
+    &__list
+      @include flexbox
+      align-items: flex-start
+      gap: 40px
+      font-size: 30px
+      line-height: 1.5
+      font-weight: 500
+      margin-top: 40px
+      span
+        color: var(--color-red)
+  &-map
+    margin-top: 100px
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      height: 100px
+      background: var(--color-black)
+      z-index: -1
+    &__title
+      text-align: center
+      font-size: 52px
+      font-weight: 500
+      line-height: 1.4
+      border-top: 1px solid var(--color-black)
+      padding: 100px 0 50px
+    &__block
+      @include flexbox
+      background: #fff
+      border: 1px solid var(--color-black)
+    &__content
+      padding: 50px 100px
+      max-width: 540px
+      width: 100%
+      h3
+        font-size: 22px
+        font-weight: 500
+        margin-top: 24px
+        &:first-child
+          margin-top: 0
+      p
+        margin-top: 8px
+        // max-width: 340px
+        font-weight: 500
+        font-size: 17px
+        line-height: 1.4
+      .btn-wrap
+        margin-top: 24px
+    &__iframe
+      background: #eee
+      width: calc(100% - 540px)
+      position: relative
+      overflow: hidden
+      & > iframe
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        width: 100% !important
+        height: 100% !important

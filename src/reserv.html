@@ -1,0 +1,29 @@
+{% extends 'components/_layout.html' %}
+{% set site_title = 'Заказ столика' %}
+
+{% block content %}
+
+{% include 'components/_header.html' %}
+
+<section class="reserv">
+  <div class="container">
+    <div class="reserv-content">
+      <h2 class="title">Заказ столика</h2>
+      <form action="#" method="post" class="reserv-form">
+        <input type="text" class="input" placeholder="Имя" />
+        <input type="tel" class="input masked" placeholder="Телефон" />
+        <input type="text" class="input" placeholder="Количество гостей" />
+        <div class="input-row">
+          <input type="text" class="input" placeholder="Дата" id="datepicker" />
+          <input type="text" class="input time" placeholder="Время" />
+        </div>
+        <input type="text" class="input" placeholder="Особые пожелания" />
+        <button class="btn">Отправить</button>
+      </form>
+      <p>Обратите внимание, что мы не принимаем бронирование и отмену по электронной почте. При бронировании, пожалуйста, укажите любые диетические ограничения, так как, к сожалению, некоторые из них мы не можем предоставить.</p>
+    </div>
+    <img src="img/reserv.jpg" alt="" class="reserv-img">
+  </div>
+</section>
+
+{% endblock %}

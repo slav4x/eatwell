@@ -1,0 +1,199 @@
+.cart
+  padding: 100px 0
+  &-title
+    font-size: 52px
+    font-weight: 500
+  &-subtitle
+    font-size: 30px
+    font-weight: 500
+    margin-bottom: 24px
+  &-row
+    @include flexbox
+    margin-top: 40px
+  &-col
+    width: 50%
+    &:nth-child(1)
+      border-right: 0.5px solid var(--color-black)
+      padding-right: 140px
+    &:nth-child(2)
+      border-left: 0.5px solid var(--color-black)
+      padding-left: 140px
+  &-item
+    @include flexbox
+    align-items: center
+    padding: 16px 0
+    border-top: 1px solid #D9D9D9
+    &:first-of-type
+      padding-top: 0
+      border: 0
+    &__image
+      width: 120px
+      height: 120px
+      object-fit: cover
+      object-position: center
+    &__title
+      flex: 1
+      padding: 0 15px
+      font-size: 15px
+      line-height: 1.4
+    &__price
+      width: 90px
+      text-align: center
+      font-size: 15px
+  &-total
+    margin-top: 16px
+    border-top: 1px solid var(--color-black)
+    padding-top: 40px
+    &__content
+      max-width: 360px
+      margin-left: auto
+    &__list
+      li
+        @include flexbox
+        align-items: center
+        justify-content: space-between
+        font-size: 17px
+        font-weight: 500
+        line-height: 1.4
+        margin-top: 8px
+        &:first-child
+          margin-top: 0
+        b
+          font-weight: 500
+        &.total
+          font-size: 22px
+          margin-top: 16px
+          b
+            color: var(--color-red)
+    &__promocode
+      position: relative
+      margin-bottom: 32px
+      input
+        width: 100%
+        height: 50px
+        border: 0
+        border-bottom: 1px solid var(--color-black)
+        padding-left: 10px
+        padding-right: 60px
+        font-size: 15px
+      button
+        position: absolute
+        top: 0
+        bottom: 0
+        margin: auto 0
+        right: 0
+        width: 50px
+        height: 30px
+        background: #d9d9d9
+        font-size: 15px
+        padding: 0
+        color: var(--color-black)
+    &__comment
+      padding: 10px
+      border: 1px solid var(--color-dark)
+      width: 100%
+      font-size: 15px
+      resize: none
+      height: 60px
+      margin-top: 32px
+  &-input
+    width: 100%
+    height: 40px
+    border: 0
+    border-bottom: 1px solid var(--color-dark)
+    font-size: 15px
+    padding: 0
+  &-form
+    .btn-wrap
+      margin: 48px 0 24px
+      justify-content: center
+    .btn
+      max-width: 210px
+    &__group
+      @include flexbox
+      flex-direction: column
+      gap: 16px
+    &__row
+      @include flexbox
+      gap: 16px
+      .cart-input
+        flex: 1
+    &__tabs
+      @include flexbox
+      height: 44px
+      border: 1px solid var(--color-red)
+      margin: 48px 0 24px
+      li
+        flex: 1
+        @include flexbox
+        align-items: center
+        justify-content: center
+        text-align: center
+        font-size: 17px
+        font-weight: 500
+        cursor: pointer
+        transition: .25s
+        &.active
+          background: var(--color-red)
+          color: #fff
+    &__tab
+      display: none
+      margin-bottom: 48px
+      &.active
+        display: block
+      p
+        font-size: 15px
+        line-height: 1.4
+        margin-top: 16px
+    &__map
+      width: 100%
+      height: 170px
+      overflow: hidden
+      position: relative
+      & > iframe
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        width: 100% !important
+        height: 100% !important
+    &__radio
+      display: block
+      margin-top: 16px
+      cursor: pointer
+      input
+        @include visually-hidden
+        &:checked + p
+          color: var(--color-black)
+          &::before
+            border-color: var(--color-black)
+            background: var(--color-red)
+      p
+        position: relative
+        font-size: 17px
+        line-height: 24px
+        color: var(--color-dark)
+        font-weight: 500
+        transition: .25s
+        padding-left: 34px
+        &::before
+          content: ''
+          position: absolute
+          top: 0
+          bottom: 0
+          left: 0
+          width: 24px
+          height: 24px
+          border-radius: 100%
+          border: 1px solid var(--color-dark)
+          background: #fff
+          box-shadow: inset 0 0 0 4px #fff
+          transition: .25s
+    &__agree
+      font-size: 15px
+      line-height: 1.5
+      a
+        color: var(--color-dark)
+        &:hover
+          color: var(--color-red)

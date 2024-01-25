@@ -1,0 +1,98 @@
+{% extends 'components/_layout.html' %}
+{% set site_title = 'Меню' %}
+
+{% block content %}
+
+{% include 'components/_header.html' %}
+
+<section class="menu">
+  <div class="container">
+    <h2 class="title">Меню</h2>
+    <div class="menu-wrapper">
+      <div class="menu-sidebar">
+        <div class="menu-sidebar__inner">
+          <ul class="menu-sidebar__nav">
+            <li>
+              <a href="#menu-1">
+                <img src="img/menu-1.png" alt="">
+                <p>Завтраки</p>
+              </a>
+            </li>
+            <li>
+              <a href="#menu-2">
+                <img src="img/menu-2.png" alt="">
+                <p>Детское меню</p>
+              </a>
+            </li>
+            <li>
+              <a href="#menu-3">
+                <img src="img/menu-3.png" alt="">
+                <p>Салаты</p>
+              </a>
+            </li>
+            <li>
+              <a href="#menu-4">
+                <img src="img/menu-4.png" alt="">
+                <p>Холодные закуски</p>
+              </a>
+            </li>
+            <li>
+              <a href="#menu-5">
+                <img src="img/menu-5.png" alt="">
+                <p>Горячие закуски</p>
+              </a>
+            </li>
+            <li>
+              <a href="#menu-6">
+                <img src="img/menu-6.png" alt="">
+                <p>Пироги</p>
+              </a>
+            </li>
+            <li>
+              <a href="#menu-7">
+                <img src="img/menu-7.png" alt="">
+                <p>Супы</p>
+              </a>
+            </li>
+            <li>
+              <a href="#menu-8">
+                <img src="img/menu-8.png" alt="">
+                <p>Основные блюда</p>
+              </a>
+            </li>
+            <li>
+              <a href="#menu-9">
+                <img src="img/menu-9.png" alt="">
+                <p>Суши</p>
+              </a>
+            </li>
+            <li>
+              <a href="#menu-10">
+                <img src="img/menu-10.png" alt="">
+                <p>Пицца</p>
+              </a>
+            </li>
+            <li>
+              <a href="#menu-11">
+                <img src="img/menu-11.png" alt="">
+                <p>Десерты</p>
+              </a>
+            </li>
+            <li>
+              <a href="#menu-12">
+                <img src="img/menu-12.png" alt="">
+                <p>Напитки</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-main">
+        {% include 'components/menu-section.html' %}
+        {% include 'components/menu-section.html' %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

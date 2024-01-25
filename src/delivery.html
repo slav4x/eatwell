@@ -1,0 +1,161 @@
+{% extends 'components/_layout.html' %}
+{% set site_title = 'Доставка' %}
+
+{% block content %}
+
+{% include 'components/_header-delivery.html' %}
+
+<section class="delivery">
+  <div class="container container-lg">
+    <ul class="delivery-nav">
+      <li>
+        <a href="#delivery-1">
+          <img src="img/delivery-1.png" alt="">
+          <p>Завтраки</p>
+        </a>
+      </li>
+      <li>
+        <a href="#delivery-2">
+          <img src="img/delivery-2.png" alt="">
+          <p>Салаты</p>
+        </a>
+      </li>
+      <li>
+        <a href="#delivery-3">
+          <img src="img/delivery-3.png" alt="">
+          <p>Супы</p>
+        </a>
+      </li>
+      <li>
+        <a href="#delivery-4">
+          <img src="img/delivery-4.png" alt="">
+          <p>Холодные закуски</p>
+        </a>
+      </li>
+      <li>
+        <a href="#delivery-5">
+          <img src="img/delivery-5.png" alt="">
+          <p>Горячие закуски</p>
+        </a>
+      </li>
+      <li>
+        <a href="#delivery-6">
+          <img src="img/delivery-6.png" alt="">
+          <p>Основные блюда</p>
+        </a>
+      </li>
+      <li>
+        <a href="#delivery-7">
+          <img src="img/delivery-7.png" alt="">
+          <p>Пицца</p>
+        </a>
+      </li>
+      <li>
+        <a href="#delivery-8">
+          <img src="img/delivery-8.png" alt="">
+          <p>Пироги</p>
+        </a>
+      </li>
+      <li>
+        <a href="#delivery-9">
+          <img src="img/delivery-9.png" alt="">
+          <p>Детское меню</p>
+        </a>
+      </li>
+      <li>
+        <a href="#delivery-10">
+          <img src="img/delivery-10.png" alt="">
+          <p>Роллы</p>
+        </a>
+      </li>
+      <li>
+        <a href="#delivery-11">
+          <img src="img/delivery-11.png" alt="">
+          <p>Гунканы</p>
+        </a>
+      </li>
+      <li>
+        <a href="#delivery-12">
+          <img src="img/delivery-12.png" alt="">
+          <p>Сеты</p>
+        </a>
+      </li>
+      <li>
+        <a href="#delivery-13">
+          <img src="img/delivery-13.png" alt="">
+          <p>Антипасти</p>
+        </a>
+      </li>
+      <li>
+        <a href="#delivery-14">
+          <img src="img/delivery-14.png" alt="">
+          <p>Гарниры</p>
+        </a>
+      </li>
+      <li>
+        <a href="#delivery-15">
+          <img src="img/delivery-15.png" alt="">
+          <p>Десерты</p>
+        </a>
+      </li>
+      <li>
+        <a href="#delivery-16">
+          <img src="img/delivery-16.png" alt="">
+          <p>Напитки</p>
+        </a>
+      </li>
+    </ul>
+    <div class="delivery-lunch">
+      <h3>Бизнес-ланч всего за <span>550₽!</span></h3>
+      <a href="#">Меню</a>
+    </div>
+    <div class="delivery-section" id="delivery-1">
+      <h2 class="delivery-section__title">Завтраки</h2>
+      <div class="delivery-section__grid">
+        <div class="delivery-banner">
+          <p>Завтраки:<br> 10:00-12:00</p>
+          <p>Бизнес-ланчи:<br> 12:00-16:00</p>
+          <hr>
+          <p>Широкий ассортимент блюд для питания на каждый день</p>
+        </div>
+        {% include 'components/delivery-item.html' %}
+        {% include 'components/delivery-item.html' %}
+        {% include 'components/delivery-item.html' %}
+        {% include 'components/delivery-item.html' %}
+        {% include 'components/delivery-item.html' %}
+        {% include 'components/delivery-item.html' %}
+        {% include 'components/delivery-item.html' %}
+      </div>
+    </div>
+    <div class="delivery-section" id="delivery-2">
+      <h2 class="delivery-section__title">Салаты</h2>
+      <div class="delivery-section__grid">
+        {% include 'components/delivery-item.html' %}
+        {% include 'components/delivery-item.html' %}
+        {% include 'components/delivery-item.html' %}
+        {% include 'components/delivery-item.html' %}
+        {% include 'components/delivery-item.html' %}
+        {% include 'components/delivery-item.html' %}
+        {% include 'components/delivery-item.html' %}
+        {% include 'components/delivery-item.html' %}
+      </div>
+    </div>
+    <div class="delivery-section" id="delivery-3">
+      <h2 class="delivery-section__title">Супы</h2>
+      <div class="delivery-section__grid">
+        {% include 'components/delivery-item.html' %}
+        {% include 'components/delivery-item.html' %}
+        {% include 'components/delivery-item.html' %}
+        {% include 'components/delivery-item.html' %}
+        {% include 'components/delivery-item.html' %}
+        {% include 'components/delivery-item.html' %}
+        {% include 'components/delivery-item.html' %}
+        {% include 'components/delivery-item.html' %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include 'components/delivery-map.html' %}
+
+{% endblock %}
